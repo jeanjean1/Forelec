@@ -13,11 +13,7 @@ daily = df.resample('D').sum().consumption
 from statsmodels.tsa.stattools import adfuller
 result = adfuller(daily.dropna())
 print('p-value: %f' % result[1]) 
-## NOTE ###
-## ADFuller tests for unit root (regression test random walk with drift)
-## Yt - Yt-1 = a + B*Yt-1 + noise    (constant + coeff*lag1 + noise)
-## H0 : B=0, H1 : B<0
-###########
+
 
 
 # ACF
@@ -37,7 +33,7 @@ train, test = daily[:100], daily[100:]
 model = arm.AR(train)
 model_fit = model.fit()
 print('Lag: %s' % model_fit.k_ar)
-print('Coefficients: %s' % model_fit.params)
+print('Coefficients: \n%s' % model_fit.params) # lag 1 and lag 7 have the biggest weights
 pred = model_fit.predict(start=len(train), end=len(train)+len(test))
 plt.plot(daily)
 plt.plot(pred)
