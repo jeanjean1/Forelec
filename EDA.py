@@ -9,7 +9,7 @@ frequencies = [60*24,60*24*7 , 60*24*30] # daily, weekly, monthly
 for freq in frequencies:
     result = seasonal_decompose(df.consumption, model='additive', freq = freq)
     result.plot()
-    #test
+    #te
 
 
     
