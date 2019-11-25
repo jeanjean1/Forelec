@@ -53,6 +53,7 @@ plt.plot(pred)
 
 
 # ARIMA
+## ARIMA = AR model + MA model + differencing (I)
 from statsmodels.tsa.arima_model import ARIMA
 arima = ARIMA(df.consumption, order=(5,1,0))
 model_fit = arima.fit()#disp=0)
