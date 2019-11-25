@@ -1,6 +1,10 @@
 # Forelec : Energy Consumption Forecast
 
 This repository provides a methodology to analyze and build models for the purpose of forecasting.
+It is aimed at ML practitioners who want to go beyond implementing standard models : 
+- understand the dataset
+- find patterns
+- build tailored models 
 
 ### Media
 A video will be posted on youtube for full explanations.
@@ -15,3 +19,7 @@ Structure:
 #### 3.1. ARIMA
 #### 3.2. SARIMAX 
 #### 3.3. Regression Trees
+### 4. Deep Learning models
+#### 3.1. MLP (Multi-layer Perceptron)
+#### 3.2. GRU (Gated Recurrent Unit)
+#### 3.3. LSTM : Long-Short Term Memory
