@@ -52,5 +52,3 @@ print(model_fit.summary())
 '''
 
 # SARIMAX
-
-
