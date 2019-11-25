@@ -15,5 +15,3 @@ Structure:
 #### 3.1. ARIMA
 #### 3.2. SARIMAX 
 #### 3.3. Regression Trees
-
-
