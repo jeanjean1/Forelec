@@ -8,6 +8,27 @@ fname =  open('fname.txt','r').read()
 df = pd.read_csv(fname, index_col=0, parse_dates=True) # Insert your own filename
 daily = df.resample('D').sum().consumption
 
+
+
+'''
+Topics Covered :
+- Summary Statistics (quartiles, boxplots...)
+- Trends : ETS
+- Plot trend
+'''
+
+# ========================= Summary Statistics =========================
+
+
+
+
+
+# ========================= Trend & Seasonality =========================
+
+
+
+
+
 # 1. Is there a trend that we remove ? (= Stationary)
 # 2. Is the current value largely influenced by a given past value ? (= Autocorrelation)
 # 3. 

@@ -2,7 +2,8 @@
 Beginner
 1. Viz:
 - Overall : Line Plot (for zoom)
-- Distribution: seaborn (no manip)
+- Distribution: overal
+- Distribution: per month, per day of week, per hour
 
 2. Analysis
 - Scatter plot: how related is it with t-1
@@ -19,22 +20,24 @@ EDA
 1. Visualization:
 - overall
   - moving average
-- Distribution: per month, per day of week, per hour
+
 - What a day looks like (each day, per day of week)
 
 2. Analysis
+- Summary Statistics (quartiles, boxplots...)
 - Trends : ETS
-- Plot trend
 
 
 
 Advanced
 
 EDA
-1. Viz : seaborn
+1. Viz 
+- seaborn
+
 2. Analysis
 - Trend, Seasonality and Error
-3. FFT (for what ?)
-4. Librosa : ?
+- FFT (for what ?)
+- Librosa : ?
 
  

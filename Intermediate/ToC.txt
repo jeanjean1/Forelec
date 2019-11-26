@@ -1,42 +1,56 @@
 
 Beginner
-1. Viz:
+1. Viz
 - Overall : Line Plot (for zoom)
 - heatmap
 
 2. Analysis
-- Scatter plot: how related is it with t-1
+- Distribution
+- Resampling
+- Scatter plot: how related is it with t-1 (correlation)
 
 3. Forecast
-- ARIMA (correlation with previous measures &/OR average of errors)
-- Regr. Tree
-(ok because small dataset)
+- naive models
+- Default ARIMA (correlation with previous measures &/OR average of errors)
 
 
 Intermediate
 
-EDA
-1. Visualization:
+1. Visualization
 - overall
   - moving average
 - Distribution: per month, per day of week, per hour (seaborn)
 - What a day looks like (each day, per day of week)
 
-
 2. Analysis
 - Trends : ETS
-- Plot trend
 - ACF, PACF
+
+3. Forecast_ML
+- Tuned ARIMA
+- Default Regr. Tree
+
+4. Forecast_DL
+- Standard MLP
 
 
 
 Advanced
 
-EDA
-1. Viz : seaborn
+1. Visualization
+- seaborn
+
 2. Analysis
 - Trend, Seasonality and Error
-3. FFT (for what ?)
-4. Librosa : ?
+- FFT (for what ?)
+- Librosa : ?
+
+3. Forecast_ML
+- SARIMAX
+- Tuned Regr. Tree
+
+3. Forecast_DL
+- LSTM
+- GRU
 
  
