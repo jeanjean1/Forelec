@@ -22,6 +22,12 @@ Topics Covered :
 # Moving average
 
 
+# ======================= Detailed viz =======================
+# heatmap: day of week vs hour of day ?
+import seaborn as sns
+sns.set()
+sns.heatmap(cons)
+
 
 # ================= Summary Statistics =======================
 # Boxplots

@@ -1,0 +1,3 @@
+- Python version (beginner)
+- Libraries
+- virtual environment (from intermediate)
