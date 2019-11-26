@@ -1,0 +1,40 @@
+
+Beginner
+1. Viz:
+- Overall : Line Plot (for zoom)
+- Distribution: seaborn (no manip)
+
+2. Analysis
+- Scatter plot: how related is it with t-1
+
+3. Forecast
+- ARIMA (correlation with previous measures &/OR average of errors)
+- Regr. Tree
+(ok because small dataset)
+
+
+Intermediate
+
+EDA
+1. Visualization:
+- overall
+  - moving average
+- Distribution: per month, per day of week, per hour
+- What a day looks like (each day, per day of week)
+
+2. Analysis
+- Trends : ETS
+- Plot trend
+
+
+
+Advanced
+
+EDA
+1. Viz : seaborn
+2. Analysis
+- Trend, Seasonality and Error
+3. FFT (for what ?)
+4. Librosa : ?
+
+ 

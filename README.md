@@ -6,6 +6,14 @@ It is aimed at ML practitioners who want to go beyond implementing standard mode
 - find patterns
 - build tailored models 
 
+
+### Difficulty Levels
+This course has three levels of difficulty, with increasing level of depth and complexity:
+* Beginner: Learning basic tools and concepts for analysis & forecasting (Libraries, OOP).
+* Intermediate: Understanding concepts of time series data and applying models
+* Advanced: in-depth analysis and model customization
+
+
 ### Media
 A video will be posted on youtube for full explanations.
 Along this course, I encourage you to choose your own dataset and compare your results.
