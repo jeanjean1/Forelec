@@ -2,6 +2,7 @@
 Beginner
 1. Viz
 - Overall : Line Plot (for zoom)
+- Distribution: overal
 - heatmap
 
 2. Analysis
@@ -19,11 +20,14 @@ Intermediate
 1. Visualization
 - overall
   - moving average
-- Distribution: per month, per day of week, per hour (seaborn)
-- What a day looks like (each day, per day of week)
+- Distribution: 
+ - Resampling
+ - Boxplots per month, per day of week, per hour (seaborn)
+
 
 2. Analysis
-- Trends : ETS
+- Summary Statistics (quartiles, boxplots...)
+- Stationarity
 - ACF, PACF
 
 3. Forecast_ML
@@ -41,15 +45,16 @@ Advanced
 - seaborn
 
 2. Analysis
-- Trend, Seasonality and Error
-- FFT (for what ?)
+- Stationarity Test
+- Trend & Seasonality (algo from scratch or lib)
+- Decomposition - FFT
 - Librosa : ?
 
 3. Forecast_ML
 - SARIMAX
 - Tuned Regr. Tree
 
-3. Forecast_DL
+4. Forecast_DL
 - LSTM
 - GRU
 

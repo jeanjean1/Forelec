@@ -22,8 +22,9 @@ plt.show()
 
 cons.describe()
 cons.plot.box()
-# ================= Resampling =================
 
+
+# ================= Resampling =================
 daily = df.resample('D').sum()
 
 
