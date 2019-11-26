@@ -18,6 +18,7 @@ Topics Covered :
 '''
 
 # ========================= Summary Statistics =========================
+df.describe()
 
 
 
@@ -30,7 +31,7 @@ Topics Covered :
 # 2. remove stationarity
 
 
-# ========================= Autocorrelation =================================
+# ========================= Autocorrelation ===========================
 # 2. Is the current value largely influenced by a given past value ? (= Autocorrelation)
 
 # ACF

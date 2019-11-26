@@ -22,11 +22,10 @@ Intermediate
   - moving average
 - Distribution: 
  - Resampling
- - Boxplots per month, per day of week, per hour (seaborn)
+ - Summary Statistics (quartiles, boxplots...)
 
 
 2. Analysis
-- Summary Statistics (quartiles, boxplots...)
 - Stationarity
 - ACF, PACF
 
@@ -42,7 +41,7 @@ Intermediate
 Advanced
 
 1. Visualization
-- seaborn
+- ETS 
 
 2. Analysis
 - Stationarity Test

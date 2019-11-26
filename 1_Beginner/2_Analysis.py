@@ -16,17 +16,25 @@ Topics Covered :
 '''
 
 # ================= Distribution =================
-# Histogram
+# Histogram: frequency of each value
 cons.hist()
 plt.show()
 
+# Boxplots : distribution of each quartile, average and median 
 cons.describe()
 cons.plot.box()
 
 
 # ================= Resampling =================
-daily = df.resample('D').sum()
+# The series object has a function to resample the data into a given frequency 
+daily = cons.resample('D').sum()
+daily.plot()
 
+weekly = cons.resample('W').sum()
+weekly.plot()
 
 
 # ================= Correlation =================
+previous = daily.shift(-1)  # Create another series 
+plt.scatter(daily, previous) # Let's 
+plt.show()
