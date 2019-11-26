@@ -2,7 +2,7 @@
 Beginner
 1. Viz:
 - Overall : Line Plot (for zoom)
-- Distribution: seaborn (no manip)
+- heatmap
 
 2. Analysis
 - Scatter plot: how related is it with t-1
@@ -19,12 +19,14 @@ EDA
 1. Visualization:
 - overall
   - moving average
-- Distribution: per month, per day of week, per hour
+- Distribution: per month, per day of week, per hour (seaborn)
 - What a day looks like (each day, per day of week)
+
 
 2. Analysis
 - Trends : ETS
 - Plot trend
+- ACF, PACF
 
 
 

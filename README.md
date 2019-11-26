@@ -1,21 +1,18 @@
 # Forelec : Energy Consumption Forecast
 
-This repository provides a methodology to analyze and build models for the purpose of forecasting.
-It is aimed at ML practitioners who want to go beyond implementing standard models : 
-- understand the dataset
-- find patterns
-- build tailored models 
-
+This repository provides an introduction to time series analysis and forecasting. 
+Currently, it is designed to be used during workshop sessions. In the future, Youtube videos will be added
+so it can be learnt independently.
 
 ### Difficulty Levels
-This course has three levels of difficulty, with increasing level of depth and complexity:
-* Beginner: Learning basic tools and concepts for analysis & forecasting (Libraries, OOP).
-* Intermediate: Understanding concepts of time series data and applying models
-* Advanced: in-depth analysis and model customization
+This course has three levels of difficulty, with different objectives:
+* Beginner: Learn basic tools (libraries, OOP) and concepts (trend, correlation) for analysis & forecasting.
+* Intermediate: Understanding concepts of time series data (distribution, seasonality, stationarity) and applying ML models
+* Advanced: in-depth analysis (eg Signal Processing) and model customization (writing custom functions & algorithms from scratch)
 
 
 ### Media
-A video will be posted on youtube for full explanations.
+Explanation videos will be posted on youtube for full explanations.
 Along this course, I encourage you to choose your own dataset and compare your results.
 Please post your results in the comments section of the video or create an issue in this repository.
 
@@ -27,7 +24,7 @@ Structure:
 #### 3.1. ARIMA
 #### 3.2. SARIMAX 
 #### 3.3. Regression Trees
-### 4. Deep Learning models
+### 4. Deep Learning models (from intermediate)
 #### 3.1. MLP (Multi-layer Perceptron)
 #### 3.2. GRU (Gated Recurrent Unit)
 #### 3.3. LSTM : Long-Short Term Memory
