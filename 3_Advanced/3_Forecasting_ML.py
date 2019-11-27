@@ -1,6 +1,3 @@
-
-#         UPDATING
-
 import pandas as pd
 import numpy as np
 from keras.models import Sequential
@@ -16,4 +13,32 @@ Covered contents:
 - XGBoost
 '''
 
+from sklearn import train_test_split
 
+
+
+# ========================= SARIMAX =========================
+
+
+
+
+
+
+# ========================= Decision Tree =========================
+
+
+
+
+
+
+# ========================= XGBoost =========================
+from xgboost import XGBRegressor 
+
+xgb = XGBRegressor()
+xgb.fit(X_train_scaled, y_train)
+pred = xgb.predict(X_test)
+
+plotModelResults(xgb, 
+                 X_train=X_train_scaled, 
+                 X_test=X_test_scaled, 
+                 plot_intervals=True, plot_anomalies=True)
