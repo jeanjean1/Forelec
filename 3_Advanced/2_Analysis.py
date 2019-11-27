@@ -14,7 +14,7 @@ daily = df.resample('D').sum().consumption
 Topics Covered :
 - Stationarity Test
 - Trend & Seasonality 
-- FFT (for what ?)
+- Signal Processing - FFT (for what ?)
 - Librosa : ?
 '''
 
@@ -42,3 +42,7 @@ df['season_m'] = '' # average of detrend_m for each time period
 
 
 # ========================= Decomposition - FFT =========================
+# We want to find patterns
+# [Explanation of Fourier Analysis]
+# I assume that means finding the dominant frequency components in the observed data. 
+# Use Fourier transform to "denoise" : preserve the largest coefficients, and eliminate the rest.

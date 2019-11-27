@@ -26,12 +26,11 @@ Intermediate
 
 
 2. Analysis
-- Stationarity
+- Trend: Stationarity
 - ACF, PACF
 
 3. Forecast_ML
-- Tuned ARIMA
-- Default Regr. Tree
+- ARIMA
 
 4. Forecast_DL
 - Standard MLP
@@ -45,13 +44,15 @@ Advanced
 
 2. Analysis
 - Stationarity Test
-- Trend & Seasonality (algo from scratch or lib)
 - Decomposition - FFT
 - Librosa : ?
+- Trend & Seasonality (algo from scratch or lib)
+
 
 3. Forecast_ML
 - SARIMAX
-- Tuned Regr. Tree
+- Regr. Tree
+- XGBoost
 
 4. Forecast_DL
 - LSTM

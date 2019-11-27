@@ -1,6 +1,3 @@
-
-#         UPDATING
-
 import pandas as pd
 import numpy as np
 from keras.models import Sequential
@@ -10,7 +7,12 @@ fname =  open('fname.txt','r').read()
 cons = pd.read_csv(fname, index_col=0, parse_dates=True).consumption # Insert your own filename
 
 
-# ===== Data Engineering =====
+# At that stage, a neural network with only 1 layer is merely finds the
+# optimal coefficients for the linear regressions of each input (time step).
+# This is called a linear transformation.
+
+# ======================= Preprocessing =======================
+
 """
 def series_to_supervised(batch_size, data):
     '''Change input data into a supervised learning dataset'''
@@ -34,7 +36,24 @@ data_gen = TimeseriesGenerator(cons.values, cons.shift().values),
                                batch_size=60)
 
 
-# ===== Model =====
+    
+# =============== Simple Neural Network ===============
+model = Sequential([
+    Dense(32, input_shape=(len(train))),
+    Activation('relu'),
+    Dense(1),
+])
+
+model.compile(loss='mse', optimizer='adam')
+model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0)
+
+
+
+# =============== NN with hidden layer ===============
+# What if some parts of the equation are not useful ?
+# We use a non-linear function to get a value tending towards 0 or 1
+# This is called an "activation function".
+
 model = Sequential([
     Dense(32, input_shape=(len(train))),
     Activation('relu'),

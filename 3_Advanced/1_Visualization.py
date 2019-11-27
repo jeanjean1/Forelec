@@ -12,6 +12,7 @@ Topics Covered :
 - Trend and Seasonality viz
 '''
 
+df.consumption.plot()
 
 # Statsmodel
 from statsmodels.tsa.seasonal import seasonal_decompose
