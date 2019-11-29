@@ -9,37 +9,29 @@ from keras.layers import Dense, Activation
 fname =  open('fname.txt','r').read()
 cons = pd.read_csv(fname, index_col=0, parse_dates=True).consumption # Insert your own filename
 
+# Predict 1 hour based on the last 12 hours
 
-# ===== Data Engineering =====
-"""
-def series_to_supervised(batch_size, data):
-    '''Change input data into a supervised learning dataset'''
-    serie = []
-    start, end, i = 1, 0, 1        
-    while(start < (data - batch_size)) :    
-        end = batch_size * i
-        batch_av = np.average(data[-end:-start])
-        serie.append(batch_av)
-        start = end
-    return serie    
-"""
-from keras.preprocessing.sequence import TimeseriesGenerator
 
+# ==================== Data Preparation ====================
+
+# Train/test split
 split = -30000 # ~20 % of 150,000
-train_x, train_y = cons[:split], ""
-test_x, test_y = cons[split:], ""
+train, test = cons[:split], cons[split:]
 
-data_gen = TimeseriesGenerator(cons.values, cons.shift().values),
-                               length=10, sampling_rate=2,
-                               batch_size=60)
+#from keras.preprocessing.sequence import TimeseriesGenerator
+#data_gen = TimeseriesGenerator(data=cons, targets=cons.shift(),length=10, sampling_rate=2,batch_size=5)
 
+#Change input data into a supervised learning dataset
+n_steps = 60*12
+train = cons.values
+train_x, train_y = [], []
+for i in range(n_steps, len(train)):
+    train_x.append(train[i-n_steps:i])
+    train_y.append(train[i])
 
-# ===== Model =====
-model = Sequential([
-    Dense(32, input_shape=(len(train))),
-    Activation('relu'),
-    Dense(1),
-])
+n_epochs = 4
+n_batch = 60
 
-model.compile(loss='mse', optimizer='adam')
-model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0)
+# ==================== Model ====================
+
+# LSTM
