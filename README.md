@@ -1,4 +1,4 @@
-# Forelec : Energy Consumption Forecast
+# Forelec : Time Series Forecasting Tutorial
 
 This repository provides an introduction to time series analysis and forecasting. 
 Currently, it is designed to be used during workshop sessions. In the future, Youtube videos will be added
