@@ -16,6 +16,7 @@ Explanation videos will be posted on youtube for full explanations.
 Along this course, I encourage you to choose your own dataset and compare your results.
 Please post your results in the comments section of the video or create an issue in this repository.
 
+[TO BE UPDATED]
 
 Structure:
 ### 1. Visualization :  Getting a feel of the data
