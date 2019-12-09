@@ -1,0 +1,43 @@
+,Problem,Keyword,Tool,Level,
+1,What kind of data is it ?,Plotting,line plot,Beginner,Linear models
+2,Our toolbox,data types,,,
+2,Most simple Prediction?,Smoothing,averaging,,
+2,What is the relation between 2 variables ?,correlation,scatter plot,,
+2,Predict the next time step,LinReg,,,
+,,,,,
+1,Predicting using several time steps,Input Variables,Multivar LinReg,,
+1,What model is best ?,Evaluation,"MAE, lineplot",Intermediate,Tuning & Error correction
+1,What timesteps have the most error ?,Coefficient,Histogram,Intermediate,Tuning & Error correction
+,,,,,
+2,How far back should we go ?,Correlation,PACF,Intermediate,Tuning & Error correction
+,Predict ,Order ?,AR(p),Intermediate,Tuning & Error correction
+,,,,,
+3,Can we correct error ?  Not from last onlyâ€¦.,Error correction,diff,Intermediate,Tuning & Error correction
+,Short term variations ?,Average - moving ,ARMA,Intermediate,Tuning & Error correction
+,,,,,
+4,Does error increase over time ?,"Smoothing, Stationarity",Moving average,Intermediate,Tuning & Error correction
+,Can we get rid of it ?,Differencing,"(could manually), ARIMA",Intermediate,Tuning & Error correction
+,,,,,
+5,Can we use a different weight for each timestep ? â†?learn based on the error,weight,"pairplot, boxplot of errors",Intermediate,Tuning & Error correction
+,Weight depends on error  â€¦,learning,Neural Network,Intermediate,Tuning & Error correction
+,,,,,
+,Non-linear models,,,,
+1,What are we missing ? If scatter looks more like curve than line,Non-linearity,"scatter plt, normal distribution",Advanced,
+,Add non-linear factors in the equation,Dimension,Polynomial,Advanced,
+,,,,,
+2,Need an algo to find non-linear relationships for us,,,,
+,Sequence of branching operations based on X: Decision Tree,Sorting,Decision Tree,Advanced,
+,,,,,
+3,Too â€œsquareâ€? because not enough sorting.,Randomness,Random Forest,Advanced,
+,,,,,
+4,?,,XgBoost,Advanced,
+,,,,,
+,,,,,
+5,NN from scratch,,MLP,Advanced,
+,,,,,
+,,,,,
+6,Add non-linear factors to our neural network,Activation Function,MLP Hidden layer,Advanced,
+,,,,,
+,,,,,
+7,Be able to remember things from earlier in the past,Memory,RNN,Advanced,
+,How to give less weight to less relevant memories,Logic Gates,"LSTM, GRU",Advanced,
