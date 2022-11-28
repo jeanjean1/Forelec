@@ -1,8 +1,7 @@
 # Forelec : Time Series Forecasting Tutorial
 
 This repository provides an introduction to time series analysis and forecasting. 
-Currently, it is designed to be used during workshop sessions. In the future, Youtube videos will be added
-so it can be learnt independently.
+Currently, it is designed to be used during workshop sessions. 
 
 ### Difficulty Levels
 This course has three levels of difficulty, with different objectives:
